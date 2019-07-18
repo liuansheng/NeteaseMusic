@@ -13,7 +13,17 @@ class Lee_FoundViewController: LeeCollectionViewController {
         super.viewDidLoad()
         self.configNaviBar()
         configView()
+        foundBannerData()
     }
+    func foundBannerData() {
+        weak var weakSelf = self
+        LeeFoundNetWorking.getFoundBanner { (result, error) in
+            weakSelf?.foundBannerModel = result
+            weakSelf?.collectionView.reloadData()
+        }
+    }
+    
+    
     func configView() {
         self.collectionView.register(LeeBannerViewCell.classForCoder(), forCellWithReuseIdentifier: kLeeBannerViewCellID)
     }
@@ -44,16 +54,18 @@ class Lee_FoundViewController: LeeCollectionViewController {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
             //顶部轮播
-            return CGSize(width: kScreenW, height: 180)
+            return CGSize(width: kScreenW, height: 140)
         }
         return CGSize(width: kScreenW, height: 0)
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let bannerViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: kLeeBannerViewCellID, for: indexPath) as! LeeBannerViewCell
-//        bannerViewCell.backgroundColor = UIColor.purple
-        
-        bannerViewCell.reloadBanner(data: 5)
+        bannerViewCell.reloadBanner(foundBannerModel: self.foundBannerModel)
         return bannerViewCell;
     }
-    
+    ///轮播数据源
+    lazy var foundBannerModel: LeeFoundBannerModel = {
+        let foundBannerModel = LeeFoundBannerModel.init()
+        return foundBannerModel
+    }()
 }

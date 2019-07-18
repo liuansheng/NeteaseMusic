@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import SnapKit
+/// 请求地址
+let kBaseUrl = "http://localhost:3000"
 
 /// 屏幕宽度
 let kScreenW    = UIScreen.main.bounds.size.width

@@ -8,15 +8,20 @@
 
 import UIKit
 import FSPagerView
+import Kingfisher
 var kLeeBannerViewCellID = "LeeBannerViewCell"
 class LeeBannerViewCell: UICollectionViewCell,FSPagerViewDelegate,FSPagerViewDataSource {
-    var dataCount = 0
-    func reloadBanner(data:Int) {
-        self.dataCount = data
+    func reloadBanner(foundBannerModel:LeeFoundBannerModel) {
+        self.foundBannerModel = foundBannerModel
         self.viewPager.reloadData()
-        self.pagerControl.numberOfPages = data;
+        self.pagerControl.numberOfPages = self.foundBannerModel.banners?.count ?? 0;
+        self.pagerControl.reloadInputViews()
     }
-    
+    /// 数据源
+    lazy var foundBannerModel: LeeFoundBannerModel = {
+        let foundBannerModel = LeeFoundBannerModel.init()
+        return foundBannerModel
+    }()
     
     lazy var viewPager: FSPagerView = {
         let viewPager = FSPagerView()
@@ -24,7 +29,7 @@ class LeeBannerViewCell: UICollectionViewCell,FSPagerViewDelegate,FSPagerViewDat
         viewPager.dataSource = self
         viewPager.delegate = self
         viewPager.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "FSPagerViewCell")
-        viewPager.automaticSlidingInterval = 3.0
+        viewPager.automaticSlidingInterval = 4.0
         viewPager.itemSize = CGSize(width: self.frame.size.width - 20, height: self.frame.size.height)
         viewPager.isInfinite = true
         viewPager.transformer = FSPagerViewTransformer(type: .zoomOut)
@@ -33,7 +38,6 @@ class LeeBannerViewCell: UICollectionViewCell,FSPagerViewDelegate,FSPagerViewDat
     }()
     lazy var pagerControl:FSPageControl = {
         let pageControl = FSPageControl(frame: CGRect(x: 0, y: self.frame.size.height - 20, width: self.frame.size.width, height: 20))
-        pageControl.numberOfPages = self.dataCount
         pageControl.contentHorizontalAlignment = .center
         pageControl.setStrokeColor(kGrayColor, for: .normal)
         pageControl.setStrokeColor(kMainColor, for: .selected)
@@ -46,16 +50,14 @@ class LeeBannerViewCell: UICollectionViewCell,FSPagerViewDelegate,FSPagerViewDat
         
     }()
     func numberOfItems(in pagerView: FSPagerView) -> Int {
-        return self.dataCount;
+        return self.foundBannerModel.banners?.count ?? 0;
     }
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let pagerViewCell = pagerView.dequeueReusableCell(withReuseIdentifier: "FSPagerViewCell", at: index)
-        
-        if index % 2 == 0 {
-            pagerViewCell.imageView?.image = UIImage.init(imageLiteralResourceName: "11604791_100539834000_2")
-        }else{
-            pagerViewCell.imageView?.image = UIImage.init(imageLiteralResourceName: "6239936_092702973000_2")
-        }
+        let urlString:String  = self.foundBannerModel.banners?[index].pic ?? ""
+        pagerViewCell.imageView?.setImageViewWithUrl(url: urlString)
+        pagerViewCell.imageView?.layer.cornerRadius = 6
+        pagerViewCell.imageView?.clipsToBounds = true
         return pagerViewCell
     }
     func pagerView(_ pagerView: FSPagerView, willDisplay cell: FSPagerViewCell, forItemAt index: Int) {

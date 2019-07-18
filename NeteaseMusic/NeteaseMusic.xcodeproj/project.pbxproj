@@ -17,6 +17,11 @@
 		157F40F522DD672200376692 /* LeeDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F40F422DD672200376692 /* LeeDefine.swift */; };
 		157F40F922DD686A00376692 /* LeeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F40F822DD686A00376692 /* LeeTabBarViewController.swift */; };
 		157F40FE22DD68F200376692 /* Lee_FoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F40FD22DD68F200376692 /* Lee_FoundViewController.swift */; };
+		15D8000B22E007F100CFA156 /* LeeBaseNetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8000A22E007F100CFA156 /* LeeBaseNetWorking.swift */; };
+		15D8000E22E0127800CFA156 /* LeeFoundNetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8000D22E0127800CFA156 /* LeeFoundNetWorking.swift */; };
+		15D8001122E01A5600CFA156 /* LeeFoundBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8001022E01A5600CFA156 /* LeeFoundBannerModel.swift */; };
+		15D8001422E01C9200CFA156 /* LeeBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8001322E01C9200CFA156 /* LeeBaseModel.swift */; };
+		15E9C07D22E0408300DCD67E /* LeeUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E9C07C22E0408300DCD67E /* LeeUIImageView.swift */; };
 		15ECC55922DEBDA4007CD702 /* LeeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ECC55822DEBDA4007CD702 /* LeeNavigationViewController.swift */; };
 		15ECC55B22DEF2C7007CD702 /* LeeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ECC55A22DEF2C7007CD702 /* LeeCollectionViewController.swift */; };
 		15ECC55F22DF0730007CD702 /* LeeBannerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ECC55E22DF0730007CD702 /* LeeBannerViewCell.swift */; };
@@ -36,6 +41,11 @@
 		157F40F422DD672200376692 /* LeeDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeDefine.swift; sourceTree = "<group>"; };
 		157F40F822DD686A00376692 /* LeeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeTabBarViewController.swift; sourceTree = "<group>"; };
 		157F40FD22DD68F200376692 /* Lee_FoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lee_FoundViewController.swift; sourceTree = "<group>"; };
+		15D8000A22E007F100CFA156 /* LeeBaseNetWorking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeBaseNetWorking.swift; sourceTree = "<group>"; };
+		15D8000D22E0127800CFA156 /* LeeFoundNetWorking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeFoundNetWorking.swift; sourceTree = "<group>"; };
+		15D8001022E01A5600CFA156 /* LeeFoundBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeFoundBannerModel.swift; sourceTree = "<group>"; };
+		15D8001322E01C9200CFA156 /* LeeBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeBaseModel.swift; sourceTree = "<group>"; };
+		15E9C07C22E0408300DCD67E /* LeeUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeUIImageView.swift; sourceTree = "<group>"; };
 		15ECC55822DEBDA4007CD702 /* LeeNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeNavigationViewController.swift; sourceTree = "<group>"; };
 		15ECC55A22DEF2C7007CD702 /* LeeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeCollectionViewController.swift; sourceTree = "<group>"; };
 		15ECC55E22DF0730007CD702 /* LeeBannerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeBannerViewCell.swift; sourceTree = "<group>"; };
@@ -87,11 +97,13 @@
 			isa = PBXGroup;
 			children = (
 				157F40DC22DD651C00376692 /* AppDelegate.swift */,
+				15D8000722E0061000CFA156 /* NetWorking */,
 				157F40EF22DD65E700376692 /* Base */,
+				15E9C07B22E0406C00DCD67E /* Extension */,
 				157F40F322DD66FE00376692 /* Define */,
-				157F40E822DD651C00376692 /* Info.plist */,
 				157F40EE22DD65D700376692 /* Main */,
 				157F40F622DD680300376692 /* Resources */,
+				157F40E822DD651C00376692 /* Info.plist */,
 			);
 			path = NeteaseMusic;
 			sourceTree = "<group>";
@@ -107,6 +119,7 @@
 		157F40EF22DD65E700376692 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				15D8001222E01C7A00CFA156 /* BaseModel */,
 				15ECC55722DEBD79007CD702 /* NavigationController */,
 				1522F86922DDAA3700738C1D /* NaviView */,
 				157F40F722DD684400376692 /* TabBarController */,
@@ -161,6 +174,8 @@
 		157F40FB22DD68B800376692 /* Found */ = {
 			isa = PBXGroup;
 			children = (
+				15D8000C22E0124B00CFA156 /* NetWorking */,
+				15D8000F22E01A4400CFA156 /* Model */,
 				15ECC55D22DF070C007CD702 /* View */,
 				157F40FC22DD68CE00376692 /* Controller */,
 			);
@@ -173,6 +188,46 @@
 				157F40FD22DD68F200376692 /* Lee_FoundViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		15D8000722E0061000CFA156 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				15D8000A22E007F100CFA156 /* LeeBaseNetWorking.swift */,
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		15D8000C22E0124B00CFA156 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				15D8000D22E0127800CFA156 /* LeeFoundNetWorking.swift */,
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		15D8000F22E01A4400CFA156 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15D8001022E01A5600CFA156 /* LeeFoundBannerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15D8001222E01C7A00CFA156 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				15D8001322E01C9200CFA156 /* LeeBaseModel.swift */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		15E9C07B22E0406C00DCD67E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				15E9C07C22E0408300DCD67E /* LeeUIImageView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		15ECC55722DEBD79007CD702 /* NavigationController */ = {
@@ -309,14 +364,20 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NeteaseMusic/Pods-NeteaseMusic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,14 +393,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				157F40FE22DD68F200376692 /* Lee_FoundViewController.swift in Sources */,
+				15E9C07D22E0408300DCD67E /* LeeUIImageView.swift in Sources */,
 				15ECC55B22DEF2C7007CD702 /* LeeCollectionViewController.swift in Sources */,
 				157F40F222DD665D00376692 /* LeeBaseViewController.swift in Sources */,
 				1522F86B22DDAA5100738C1D /* LeeBaseView.swift in Sources */,
+				15D8000B22E007F100CFA156 /* LeeBaseNetWorking.swift in Sources */,
 				15ECC55922DEBDA4007CD702 /* LeeNavigationViewController.swift in Sources */,
 				157F40DD22DD651C00376692 /* AppDelegate.swift in Sources */,
 				157F40F922DD686A00376692 /* LeeTabBarViewController.swift in Sources */,
 				15ECC55F22DF0730007CD702 /* LeeBannerViewCell.swift in Sources */,
+				15D8001422E01C9200CFA156 /* LeeBaseModel.swift in Sources */,
+				15D8000E22E0127800CFA156 /* LeeFoundNetWorking.swift in Sources */,
 				157F40F522DD672200376692 /* LeeDefine.swift in Sources */,
+				15D8001122E01A5600CFA156 /* LeeFoundBannerModel.swift in Sources */,
 				1522F86D22DDAAC800738C1D /* LeeSearchNaviView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

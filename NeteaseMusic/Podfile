@@ -6,6 +6,9 @@ target 'NeteaseMusic' do
   use_frameworks!
 
   # Pods for NeteaseMusic
-  pod 'SnapKit'
-  pod 'FSPagerView'
+  pod 'SnapKit'#自动布局
+  pod 'FSPagerView'#轮播
+  pod 'Alamofire'#网络请求库
+  pod 'HandyJSON'#json转model
+  pod 'Kingfisher' #图片加载
 end

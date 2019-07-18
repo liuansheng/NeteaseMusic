@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow.init(frame: UIScreen.main.bounds);
         self.window?.rootViewController = LeeTabBarViewController.init();
         self.window?.makeKeyAndVisible();
+        
         return true
     }
 
