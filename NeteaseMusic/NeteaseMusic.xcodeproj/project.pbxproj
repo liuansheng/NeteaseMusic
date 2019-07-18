@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1522F86B22DDAA5100738C1D /* LeeBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F86A22DDAA5100738C1D /* LeeBaseView.swift */; };
+		1522F86D22DDAAC800738C1D /* LeeSearchNaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F86C22DDAAC800738C1D /* LeeSearchNaviView.swift */; };
 		157F40DD22DD651C00376692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F40DC22DD651C00376692 /* AppDelegate.swift */; };
-		157F40DF22DD651C00376692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F40DE22DD651C00376692 /* ViewController.swift */; };
 		157F40E222DD651C00376692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157F40E022DD651C00376692 /* Main.storyboard */; };
 		157F40E422DD651C00376692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157F40E322DD651C00376692 /* Assets.xcassets */; };
 		157F40E722DD651C00376692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157F40E522DD651C00376692 /* LaunchScreen.storyboard */; };
+		157F40F222DD665D00376692 /* LeeBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F40F122DD665D00376692 /* LeeBaseViewController.swift */; };
+		157F40F522DD672200376692 /* LeeDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F40F422DD672200376692 /* LeeDefine.swift */; };
+		157F40F922DD686A00376692 /* LeeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F40F822DD686A00376692 /* LeeTabBarViewController.swift */; };
+		157F40FE22DD68F200376692 /* Lee_FoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157F40FD22DD68F200376692 /* Lee_FoundViewController.swift */; };
+		15ECC55922DEBDA4007CD702 /* LeeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ECC55822DEBDA4007CD702 /* LeeNavigationViewController.swift */; };
+		15ECC55B22DEF2C7007CD702 /* LeeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ECC55A22DEF2C7007CD702 /* LeeCollectionViewController.swift */; };
+		15ECC55F22DF0730007CD702 /* LeeBannerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ECC55E22DF0730007CD702 /* LeeBannerViewCell.swift */; };
+		22A44BCE333698E9B86B9D90 /* Pods_NeteaseMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51440B9EFB7CDB9DB6FD07DC /* Pods_NeteaseMusic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1522F86A22DDAA5100738C1D /* LeeBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeBaseView.swift; sourceTree = "<group>"; };
+		1522F86C22DDAAC800738C1D /* LeeSearchNaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeSearchNaviView.swift; sourceTree = "<group>"; };
 		157F40D922DD651C00376692 /* NeteaseMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeteaseMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		157F40DC22DD651C00376692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		157F40DE22DD651C00376692 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		157F40E122DD651C00376692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		157F40E322DD651C00376692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157F40E622DD651C00376692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157F40E822DD651C00376692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		157F40F122DD665D00376692 /* LeeBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeBaseViewController.swift; sourceTree = "<group>"; };
+		157F40F422DD672200376692 /* LeeDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeDefine.swift; sourceTree = "<group>"; };
+		157F40F822DD686A00376692 /* LeeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeTabBarViewController.swift; sourceTree = "<group>"; };
+		157F40FD22DD68F200376692 /* Lee_FoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lee_FoundViewController.swift; sourceTree = "<group>"; };
+		15ECC55822DEBDA4007CD702 /* LeeNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeNavigationViewController.swift; sourceTree = "<group>"; };
+		15ECC55A22DEF2C7007CD702 /* LeeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeCollectionViewController.swift; sourceTree = "<group>"; };
+		15ECC55E22DF0730007CD702 /* LeeBannerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeBannerViewCell.swift; sourceTree = "<group>"; };
+		51440B9EFB7CDB9DB6FD07DC /* Pods_NeteaseMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeteaseMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D116733F6090EF4DFED9C51 /* Pods-NeteaseMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeteaseMusic.debug.xcconfig"; path = "Target Support Files/Pods-NeteaseMusic/Pods-NeteaseMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		84543C2F0853A068BF84A328 /* Pods-NeteaseMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeteaseMusic.release.xcconfig"; path = "Target Support Files/Pods-NeteaseMusic/Pods-NeteaseMusic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A44BCE333698E9B86B9D90 /* Pods_NeteaseMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1522F86922DDAA3700738C1D /* NaviView */ = {
+			isa = PBXGroup;
+			children = (
+				1522F86A22DDAA5100738C1D /* LeeBaseView.swift */,
+				1522F86C22DDAAC800738C1D /* LeeSearchNaviView.swift */,
+			);
+			path = NaviView;
+			sourceTree = "<group>";
+		};
 		157F40D022DD651C00376692 = {
 			isa = PBXGroup;
 			children = (
 				157F40DB22DD651C00376692 /* NeteaseMusic */,
 				157F40DA22DD651C00376692 /* Products */,
+				471F767FDD364368706D5CF6 /* Pods */,
+				95D14175E79A77DAB2FD7073 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +87,125 @@
 			isa = PBXGroup;
 			children = (
 				157F40DC22DD651C00376692 /* AppDelegate.swift */,
-				157F40DE22DD651C00376692 /* ViewController.swift */,
+				157F40EF22DD65E700376692 /* Base */,
+				157F40F322DD66FE00376692 /* Define */,
+				157F40E822DD651C00376692 /* Info.plist */,
+				157F40EE22DD65D700376692 /* Main */,
+				157F40F622DD680300376692 /* Resources */,
+			);
+			path = NeteaseMusic;
+			sourceTree = "<group>";
+		};
+		157F40EE22DD65D700376692 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				157F40FA22DD689500376692 /* Found */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		157F40EF22DD65E700376692 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				15ECC55722DEBD79007CD702 /* NavigationController */,
+				1522F86922DDAA3700738C1D /* NaviView */,
+				157F40F722DD684400376692 /* TabBarController */,
+				157F40F022DD660600376692 /* BaseContrller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		157F40F022DD660600376692 /* BaseContrller */ = {
+			isa = PBXGroup;
+			children = (
+				157F40F122DD665D00376692 /* LeeBaseViewController.swift */,
+				15ECC55A22DEF2C7007CD702 /* LeeCollectionViewController.swift */,
+			);
+			path = BaseContrller;
+			sourceTree = "<group>";
+		};
+		157F40F322DD66FE00376692 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				157F40F422DD672200376692 /* LeeDefine.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		157F40F622DD680300376692 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				157F40E022DD651C00376692 /* Main.storyboard */,
 				157F40E322DD651C00376692 /* Assets.xcassets */,
 				157F40E522DD651C00376692 /* LaunchScreen.storyboard */,
-				157F40E822DD651C00376692 /* Info.plist */,
 			);
-			path = NeteaseMusic;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		157F40F722DD684400376692 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				157F40F822DD686A00376692 /* LeeTabBarViewController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		157F40FA22DD689500376692 /* Found */ = {
+			isa = PBXGroup;
+			children = (
+				157F40FB22DD68B800376692 /* Found */,
+			);
+			path = Found;
+			sourceTree = "<group>";
+		};
+		157F40FB22DD68B800376692 /* Found */ = {
+			isa = PBXGroup;
+			children = (
+				15ECC55D22DF070C007CD702 /* View */,
+				157F40FC22DD68CE00376692 /* Controller */,
+			);
+			path = Found;
+			sourceTree = "<group>";
+		};
+		157F40FC22DD68CE00376692 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				157F40FD22DD68F200376692 /* Lee_FoundViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		15ECC55722DEBD79007CD702 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				15ECC55822DEBDA4007CD702 /* LeeNavigationViewController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		15ECC55D22DF070C007CD702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15ECC55E22DF0730007CD702 /* LeeBannerViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		471F767FDD364368706D5CF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D116733F6090EF4DFED9C51 /* Pods-NeteaseMusic.debug.xcconfig */,
+				84543C2F0853A068BF84A328 /* Pods-NeteaseMusic.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		95D14175E79A77DAB2FD7073 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51440B9EFB7CDB9DB6FD07DC /* Pods_NeteaseMusic.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 157F40EB22DD651C00376692 /* Build configuration list for PBXNativeTarget "NeteaseMusic" */;
 			buildPhases = (
+				49D1C7042EFDC969CF1A39E5 /* [CP] Check Pods Manifest.lock */,
 				157F40D522DD651C00376692 /* Sources */,
 				157F40D622DD651C00376692 /* Frameworks */,
 				157F40D722DD651C00376692 /* Resources */,
+				F30878FD72720590EEDA5DDC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -90,6 +236,7 @@
 		157F40D122DD651C00376692 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = Lee;
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = quansheng;
@@ -130,13 +277,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49D1C7042EFDC969CF1A39E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeteaseMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F30878FD72720590EEDA5DDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeteaseMusic/Pods-NeteaseMusic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeteaseMusic/Pods-NeteaseMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		157F40D522DD651C00376692 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				157F40DF22DD651C00376692 /* ViewController.swift in Sources */,
+				157F40FE22DD68F200376692 /* Lee_FoundViewController.swift in Sources */,
+				15ECC55B22DEF2C7007CD702 /* LeeCollectionViewController.swift in Sources */,
+				157F40F222DD665D00376692 /* LeeBaseViewController.swift in Sources */,
+				1522F86B22DDAA5100738C1D /* LeeBaseView.swift in Sources */,
+				15ECC55922DEBDA4007CD702 /* LeeNavigationViewController.swift in Sources */,
 				157F40DD22DD651C00376692 /* AppDelegate.swift in Sources */,
+				157F40F922DD686A00376692 /* LeeTabBarViewController.swift in Sources */,
+				15ECC55F22DF0730007CD702 /* LeeBannerViewCell.swift in Sources */,
+				157F40F522DD672200376692 /* LeeDefine.swift in Sources */,
+				1522F86D22DDAAC800738C1D /* LeeSearchNaviView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,11 +484,14 @@
 		};
 		157F40EC22DD651C00376692 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D116733F6090EF4DFED9C51 /* Pods-NeteaseMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JBQK45MKQJ;
 				INFOPLIST_FILE = NeteaseMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +505,14 @@
 		};
 		157F40ED22DD651C00376692 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84543C2F0853A068BF84A328 /* Pods-NeteaseMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JBQK45MKQJ;
 				INFOPLIST_FILE = NeteaseMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

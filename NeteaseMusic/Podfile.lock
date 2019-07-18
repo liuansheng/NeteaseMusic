@@ -1,0 +1,20 @@
+PODS:
+  - FSPagerView (0.8.2)
+  - SnapKit (5.0.0)
+
+DEPENDENCIES:
+  - FSPagerView
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FSPagerView
+    - SnapKit
+
+SPEC CHECKSUMS:
+  FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+
+PODFILE CHECKSUM: a0b2f28e784130db30dae1736cd805659846e6cb
+
+COCOAPODS: 1.6.0
