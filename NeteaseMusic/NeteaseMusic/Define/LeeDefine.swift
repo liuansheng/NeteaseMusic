@@ -25,12 +25,13 @@ let kStatusH    = UIApplication.shared.statusBarFrame.size.height
 
 
 /// 白色
-let kWhiteColor = UIColor.white
+let kWhiteColor =   UIColor.white
 /// 主题红色
-let kMainColor  = kRGBColor(r: 200, g: 45, b: 34)
+let kMainColor  =   kRGBColor(r: 200, g: 45, b: 34)
 //  TabBar灰色
-let kGrayColor  =  kRGBColor(r: 108, g: 108, b: 108)
-
+let kGrayColor  =   kRGBColor(r: 108, g: 108, b: 108)
+/// 黑色
+let kBlackColor =   UIColor.black
 
 func kRGBColor(r:CGFloat,g:CGFloat,b:CGFloat) -> UIColor {
     return UIColor.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1)

@@ -1,14 +1,13 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
-
+platform :ios, '10.0'
 target 'NeteaseMusic' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for NeteaseMusic
+  inhibit_all_warnings!
   pod 'SnapKit'#自动布局
   pod 'FSPagerView'#轮播
   pod 'Alamofire'#网络请求库
   pod 'HandyJSON'#json转model
   pod 'Kingfisher' #图片加载
+  pod 'CRRefresh'
 end

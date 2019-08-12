@@ -37,6 +37,11 @@ class LeeFoundBannerBannersModel :LeeBaseModel {
     var encodeId: String?
     var program: String?
     var requestId: String?
+    /*  目标类型
+     *  3000    跳网页
+     *  1000    跳歌单
+     *  
+     */
     var targetType: Int = 0
     var pid: String?
     var bannerId: String?

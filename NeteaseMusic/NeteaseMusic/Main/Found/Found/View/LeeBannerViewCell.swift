@@ -11,6 +11,7 @@ import FSPagerView
 import Kingfisher
 var kLeeBannerViewCellID = "LeeBannerViewCell"
 class LeeBannerViewCell: UICollectionViewCell,FSPagerViewDelegate,FSPagerViewDataSource {
+    var foundVC = Lee_FoundViewController()
     func reloadBanner(foundBannerModel:LeeFoundBannerModel) {
         self.foundBannerModel = foundBannerModel
         self.viewPager.reloadData()
@@ -64,7 +65,13 @@ class LeeBannerViewCell: UICollectionViewCell,FSPagerViewDelegate,FSPagerViewDat
         pagerControl.currentPage = index
     }
     func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
-        print(index)
+        let targetType  = self.foundBannerModel.banners?[index].targetType
+        if targetType == 3000 {
+            let webVC = LeeWkWebViewController.init()
+            self.foundVC.navigationController?.pushViewController(webVC, animated: true)
+            
+        }
+        
     }
 }
 

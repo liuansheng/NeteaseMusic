@@ -18,14 +18,13 @@ class LeeSearchNaviView: LeeBaseView,UISearchBarDelegate {
     func callBackBlcok(block: @escaping voidBlock) {
         didBeginEditingBlock = block
     }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.searchBar = UISearchBar.init(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
         self.searchBar.placeholder = "搜索"
         self.searchBar.delegate = self;
         self.addSubview(self.searchBar)
-        
+        self.searchBar.subviews[0].subviews[0].removeFromSuperview()
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

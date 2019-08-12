@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.2)
+  - CRRefresh (1.1.3)
   - FSPagerView (0.8.2)
   - HandyJSON (5.0.0)
   - Kingfisher (5.7.0)
@@ -7,6 +8,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - CRRefresh
   - FSPagerView
   - HandyJSON
   - Kingfisher
@@ -15,6 +17,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - CRRefresh
     - FSPagerView
     - HandyJSON
     - Kingfisher
@@ -22,11 +25,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CRRefresh: 1415d4ae06837fa7bb064c44f2e102f3ef517044
   FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
   HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
   Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
-PODFILE CHECKSUM: 25a10867dc498a876918cef8c9061740d91da614
+PODFILE CHECKSUM: 97ab6d34f9950225c9920d120da09b5f5ef3ca50
 
 COCOAPODS: 1.6.0
